@@ -5,6 +5,23 @@ body {
   background-color: rgb(105 175 175);
 }
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.restart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 130px;
+  color: rgb(255, 31, 151);
+}
+
 #board {
   display: grid;
   grid-template-columns: 100px 100px 100px;
@@ -29,11 +46,19 @@ body {
   background-color: rgb(204, 234, 235);
 }
 
-.x_hover:hover::after {
+.X_hover:hover::after {
   content: "X";
   color: rgba(39, 38, 38, 0.911);
 }
-.o_hover:hover::after {
+.O_hover:hover::after {
   content: "O";
   color: rgba(39, 38, 38, 0.911);
+}
+
+.winner {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
